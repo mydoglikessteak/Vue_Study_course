@@ -5,6 +5,9 @@
         class="border-brand-gray-1 mx-auto flex h-full flex-nowrap border-b border-solid px-8"
       >
         <a href="/" class="flex h-full items-center text-xl">{{ company }}</a>
+        <h2 class="ml-8 flex h-full items-center">
+          Developed by {{ author.firstname }} {{ author.lastname }}
+        </h2>
       </div>
     </div>
   </header>
@@ -16,6 +19,10 @@ export default {
   data() {
     return {
       company: "Bobo Carrers",
+      author: {
+        firstname: "Vini",
+        lastname: "dev",
+      },
     };
   },
 };
