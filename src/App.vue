@@ -1,7 +1,17 @@
 <template>
-  <h1 class="m-20 text-6xl text-center">Hello Vue</h1>
+  <main-nav />
 </template>
 
+<script>
+import MainNav from "@/components/MainNav.vue";
+
+export default {
+  name: "App",
+  components: {
+    MainNav,
+  },
+};
+</script>
 <!--
   
   */scoped significa que os estilos serao encapsulados somente neste componente
